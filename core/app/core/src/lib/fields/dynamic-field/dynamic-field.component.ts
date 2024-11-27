@@ -117,7 +117,7 @@ export class DynamicFieldComponent implements OnInit {
             return false;
         }
 
-        if (this.type === 'relate') {
+        if (this.type === 'relate' && this.field.definition?.link) {  
             return true;
         }
 
